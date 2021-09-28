@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'My Lucida';
     src: url('../font/LucidaGrande.ttf');
-    font-style: normal; 
+    font-style: normal;
     font-weight: bold;
 }
 
@@ -41,12 +41,15 @@ header .user a {
     color: #89949b;
     padding-top: 5px;
 }
-
-main h2 {
-    margin-top: 4px;
+main .albums {
+    text-align: center;
 }
-
-
+main h2 {
+    margin-bottom: 1em;
+}
+main .station {
+    margin-bottom: 1em;
+}
 main article {
     display: inline-block;
 }
@@ -72,7 +75,16 @@ nav ul li a:hover {
 nav ul li {
     margin-top: 5px;
 }
-
+.row{
+    display:flex;
+}
+.row .navside{
+    width: 10em;
+ }
+.row main{
+     width: 70em;
+     
+ }
 main header aside img {
     border: 1px solid #dadada;
     border-radius: 50%;
@@ -151,6 +163,7 @@ input.submit {
 }
 
 .station {
+
     font-size: 12px;
     color: #008fd5;
     border-radius: 5px;
@@ -216,6 +229,8 @@ nav a.new { background: url("../img/icon/new.png") no-repeat 0px; }
 nav a.collection { background: url("../img/icon/collection.png") no-repeat 0px; }
 nav a.history { background: url("../img/icon/history.png") no-repeat 0px; }
 
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) { .navside {width: 100%;}}
+@media only screen and (max-device-width : 360px) { .albums {width: 50%;}}
 
 
 
