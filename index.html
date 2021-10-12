@@ -15,7 +15,7 @@
 				<img class="pull-left" src="img/logo.png" />
 			</div>
 
-			<form method="POST" action="index.html">
+			<form class="serachbar" method="POST" action="index.html">
 				<input type="search" required class="search">
 				<input type="submit" name="submit" value="Rechercher" class="submit">
 			</form>
@@ -25,29 +25,39 @@
 		</div>
 	</header>
 	<div class="row">
-		<aside class="navside">
-			<h3>Browse</h3>
-			<nav class="browse">
-				<ul class="main">
-					<li><a class="heavy" href="#">Heavy Rotation</a></li>
-					<li><a class="recent" href="#">Recent Activity</a></li>
-					<li><a class="top" href="#">Top Charts</a></li>
-					<li><a class="new" href="#">New Releases</a></li>
-				</ul>
-			</nav>
-			<h3>Your music</h3>
-			<nav class="music">
-				<ul class="main">
-					<li><a class="collection" href="#">Collection</a></li>
-					<li><a class="history" href="#">History</a></li>
-				</ul>
-			</nav>
-		</aside>
+		<div class="navside-wrap">
+			<aside class="navside">
+				<h3>Browse</h3>
+				<nav class="browse">
+					<ul class="main">
+						<li><a class="heavy" href="#">Heavy Rotation</a></li>
+						<li><a class="recent" href="#">Recent Activity</a></li>
+						<li><a class="top" href="#">Top Charts</a></li>
+						<li><a class="new" href="#">New Releases</a></li>
+					</ul>
+				</nav>
+				<h3>Your music</h3>
+				<nav class="music">
+					<ul class="main">
+						<li><a class="collection" href="#">Collection</a></li>
+						<li><a class="history" href="#">History</a></li>
+					</ul>
+				</nav>
+			</aside>
+		</div>
 		<main>
 			<header>
 				<div class="name-photo">
 					<aside>
 						<img src="img/artist.png" />
+						<div class="dropdown">
+							<button class="dropbtn">Menu</button>
+							<div class="dropdown-content">
+								<a href="#">Link 1</a>
+								<a href="#">Link 2</a>
+								<a href="#">Link 3</a>
+							</div>
+						</div>
 					</aside>
 					<div class="name">
 						<h1>Luke Chesser</h1>

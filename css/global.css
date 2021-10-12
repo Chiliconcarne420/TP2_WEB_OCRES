@@ -19,7 +19,10 @@ a {
 }
 
 .wrapper {
-    padding: 25px 0;
+    padding: 1em;
+    text-align: justify;
+    display: flex;
+
 }
 
 body > header {
@@ -90,7 +93,28 @@ main header aside img {
     border-radius: 50%;
     box-shadow: 0 0 5px #cecece;
 }
-
+main header aside .dropdown{
+    display: none;
+    float: right;
+}
+main header aside .dropdown-content {
+    display: none;
+    position: relative;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+main header aside .dropdown:hover .dropdown-content {
+    display: block;
+  }
 nav ul li:last-child {
     margin-bottom: 30px;
 }
@@ -229,8 +253,17 @@ nav a.new { background: url("../img/icon/new.png") no-repeat 0px; }
 nav a.collection { background: url("../img/icon/collection.png") no-repeat 0px; }
 nav a.history { background: url("../img/icon/history.png") no-repeat 0px; }
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) { .navside {width: 100%;}}
-@media only screen and (max-device-width : 360px) { .albums {width: 50%;}}
+@media only screen and (max-device-width : 360px) {   
+    .links{display: flex;}
+    .albums article {width: 45%;}
+    
+}
 
-
+@media only screen and (max-device-width : 768px) {
+  .navside {display: none;}
+  .serachbar {display: flex;}
+  main header aside .dropdown{display:block;}
+  .albums article {width: 24%;}
+  
+}
 
